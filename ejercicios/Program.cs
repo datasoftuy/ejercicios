@@ -3,44 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ejercicios
+namespace leapyear
 {
     class Program
     {
         static void Main(string[] args)
         {
 
-            string salir;
-            bool seguir = true;
-
-
-            while (seguir != false)
-
-
-
-
+            bool salir = false;
+            string otravez;
+            while (salir != true)
             {
+                Console.WriteLine("OK    while    ");
 
-                Console.WriteLine("OK");
-            
-            
-            
-            }
+                Console.WriteLine("Presione s para salir");
+                otravez = Console.ReadLine().ToLower();
 
-            Console.WriteLine("Presione s para salir");
-            salir = Console.ReadLine().ToUpper();
-
-            if (salir == "s")
-            {
-                seguir = false;
-
-
-
+                if (otravez == "s")
+                {
+                    salir = true;
+                
+                
+                }
 
 
             }
-        
-        
+              
+
         }
     }
 }
